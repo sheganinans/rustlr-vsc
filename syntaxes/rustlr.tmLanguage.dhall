@@ -55,13 +55,13 @@ let add-custom-fns = pattern "entity.name.function.add-custom-fns.rustlr" "(add_
 let lifetime = pattern "storage.modifier.lifetime.rustlr" "'[\\p{Lower}_]+"
 
 in {
-	`$schema` = "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	scopeName = "source.rustlr",
-	name = "rustlr",
-	patterns = include_list [
+  `$schema` = "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  scopeName = "source.rustlr",
+  name = "rustlr",
+  patterns = include_list [
     "#comment", "#eof-comment", "#lit-include-1", "#lit-include-2",
     "#keywords", "#strings", "#ops", "#constructor", "#lit-tokens",
     "#bind-name", "#add-custom-fns", "#lifetime", "#ids"
   ],
-	repository = { comment, eof-comment, lit-include-1, lit-include-2, keywords, strings, ops, constructor, lit-tokens, bind-name, add-custom-fns, lifetime, ids },
+  repository = { comment, eof-comment, lit-include-1, lit-include-2, keywords, strings, ops, constructor, lit-tokens, bind-name, add-custom-fns, lifetime, ids },
 }
