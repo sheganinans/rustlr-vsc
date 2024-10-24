@@ -1,0 +1,31 @@
+{
+  "name": "rustlr",
+  "displayName": "rustlr",
+  "description": "Syntax Highlighting for rustlr",
+  "icon": "images/example.png",
+  "publisher" : "sheganinans",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheganinans/rustlr-vsc.git"
+  },
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rustlr",
+      "aliases": ["rustlr", "rustlr"],
+      "extensions": [".grammar"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rustlr",
+      "scopeName": "source.rustlr",
+      "path": "./syntaxes/rustlr.tmLanguage.json"
+    }]
+  }
+}
