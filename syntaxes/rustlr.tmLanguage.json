@@ -33,7 +33,7 @@
       "include": "#bind-name"
     },
     {
-      "include": "#add-custom"
+      "include": "#add-custom-fns"
     },
     {
       "include": "#lifetime"
@@ -43,11 +43,11 @@
     }
   ],
   "repository": {
-    "add-custom": {
+    "add-custom-fns": {
       "patterns": [
         {
-          "match": "(add_custom|set_line_comment)",
-          "name": "entity.name.function.add-custom.rustlr"
+          "match": "(add_custom|set_line_comment|set_multiline_comments)",
+          "name": "entity.name.function.add-custom-fns.rustlr"
         }
       ]
     },

@@ -50,7 +50,7 @@ let bind-name = pattern "support.type.bind-name.rustlr" "(?<=:)[\\p{Letter}_]+"
 
 let lit-tokens = pattern "constant.language.rustlr" "(?<!\\w)[\\p{Upper}_]+(?!\\w)"
 
-let add-custom = pattern "entity.name.function.add-custom.rustlr" "(add_custom|set_line_comment)"
+let add-custom-fns = pattern "entity.name.function.add-custom-fns.rustlr" "(add_custom|set_line_comment|set_multiline_comments)"
 
 let lifetime = pattern "storage.modifier.lifetime.rustlr" "'[\\p{Lower}_]+"
 
@@ -61,7 +61,7 @@ in {
 	patterns = include_list [
     "#comment", "#eof-comment", "#lit-include-1", "#lit-include-2",
     "#keywords", "#strings", "#ops", "#constructor", "#lit-tokens",
-    "#bind-name", "#add-custom", "#lifetime", "#ids"
+    "#bind-name", "#add-custom-fns", "#lifetime", "#ids"
   ],
-	repository = { comment, eof-comment, lit-include-1, lit-include-2, keywords, strings, ops, constructor, lit-tokens, bind-name, add-custom, lifetime, ids },
+	repository = { comment, eof-comment, lit-include-1, lit-include-2, keywords, strings, ops, constructor, lit-tokens, bind-name, add-custom-fns, lifetime, ids },
 }
