@@ -2,7 +2,7 @@
 
 Syntax highlighting for [rustlr](https://github.com/chuckcscccl/rustlr/)
 
-Available at:
+Available at: https://marketplace.visualstudio.com/items?itemName=sheganinans.rustlr
 
 Source at: https://github.com/sheganinans/rustlr-vsc
 
