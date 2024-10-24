@@ -50,7 +50,7 @@ let bind-name = pattern "support.type.bind-name.rustlr" "(?<=:)[\\p{Letter}_]+"
 
 let lit-tokens = pattern "constant.language.rustlr" "(?<!\\w)[\\p{Upper}_]+(?!\\w)"
 
-let add-custom = pattern "entity.name.function.add-custom.rustlr" "add_custom"
+let add-custom = pattern "entity.name.function.add-custom.rustlr" "(add_custom|set_line_comment)"
 
 let lifetime = pattern "storage.modifier.lifetime.rustlr" "'[\\p{Lower}_]+"
 
