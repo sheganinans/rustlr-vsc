@@ -54,7 +54,7 @@
     "bind-name": {
       "patterns": [
         {
-          "match": "(?<=:)[\\p{Letter}_]+",
+          "match": "(?<=:)[\\p{Letter}_]+[\\p{Letter}_\\d]*",
           "name": "support.type.bind-name.rustlr"
         }
       ]
@@ -80,7 +80,7 @@
     "ids": {
       "patterns": [
         {
-          "match": "[\\p{Letter}_]+[\\p{Letter}_\\d]",
+          "match": "[\\p{Letter}_]+[\\p{Letter}_\\d]*",
           "name": "variable.id.rustlr"
         }
       ]

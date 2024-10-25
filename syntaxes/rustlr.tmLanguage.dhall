@@ -38,7 +38,7 @@ let strings = {
   patterns = [ pat "constant.character.escape.rustlr" "." ]
 }
 
-let ids = pattern "variable.id.rustlr" "[\\p{Letter}_]+[\\p{Letter}_\\d]"
+let ids = pattern "variable.id.rustlr" "[\\p{Letter}_]+[\\p{Letter}_\\d]*"
 
 let constructor =
   pattern
@@ -46,7 +46,7 @@ let constructor =
     ("(?<!^)(\\(\\)|bool|i8|u8|i16|u16|i32|u32|i64|u64|usize|isize|f32|f64|char|" ++
     "\\(usize,usize\\)|str|String|LC|Vec|\\p{Upper}[\\p{Letter}]*(?=\\()|(?<=externtype\\s)[\\p{Letter}_]+(?=<))(?!(\\w|_))")
 
-let bind-name = pattern "support.type.bind-name.rustlr" "(?<=:)[\\p{Letter}_]+"
+let bind-name = pattern "support.type.bind-name.rustlr" "(?<=:)[\\p{Letter}_]+[\\p{Letter}_\\d]*"
 
 let lit-tokens = pattern "constant.language.rustlr" "(?<!\\w)[\\p{Upper}_]+(?!\\w)"
 
